@@ -81,6 +81,3 @@
 
 	<div class="hatched-rev h-12 w-full"></div>
 </div>
-
-<style>
-</style>
