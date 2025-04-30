@@ -1,3 +1,77 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 @plugin "daisyui";
+
+.victor-mono {
+	font-family: 'Victor Mono', monospace;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.hatched {
+	border: 1px solid #9a9a9a81;
+	background-color: #1c1917;
+	background-size: 10px 10px;
+	background-image: repeating-linear-gradient(
+		45deg,
+		#9a9a9a62 0,
+		#9a9a9a62 1px,
+		transparent 0,
+		transparent 50%
+	);
+}
+
+.hatched-rev {
+	border: 1px solid #9a9a9a81;
+	background-color: #1c1917;
+	background-size: 10px 10px;
+	background-image: repeating-linear-gradient(
+		-45deg,
+		#9a9a9a62 0,
+		#9a9a9a62 1px,
+		#1c1917 0,
+		#1c1917 50%
+	);
+}
+
+.graph-paper {
+	--s: 60px; /* control the size*/
+	--c1: #9a9a9a62;
+	--c2: #1c1917;
+
+	--_g: #0000 90deg, var(--c1) 0;
+	background:
+		conic-gradient(from 90deg at 2px 2px, var(--_g)),
+		conic-gradient(from 90deg at 1px 1px, var(--_g)), var(--c2);
+	background-size:
+		var(--s) var(--s),
+		calc(var(--s) / 5) calc(var(--s) / 10);
+}
+
+.boxes {
+	background-color: #1c1917;
+	opacity: 1;
+	background-image:
+		linear-gradient(#9a9a9a3f 1px, transparent 1px),
+		linear-gradient(to right, #9a9a9a3f 1px, transparent 1px);
+	background-size: 8px 8px;
+}
+
+.dots {
+	background-color: #1c1917;
+
+	background-image: radial-gradient(rgba(255, 255, 255, 0.171) 1px, transparent 0);
+	background-size: 10px 10px;
+	background-position: -1px -1px;
+}
+
+.brdr {
+	border: 1px solid #9a9a9a62;
+}
+
+/* Top to Bottom */
+.brdr-t2b {
+	border-left: 1px solid #9a9a9a62;
+	border-right: 1px solid #9a9a9a62;
+}
