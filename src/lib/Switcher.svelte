@@ -8,8 +8,7 @@
 
 <button class="relative h-full w-full cursor-pointer" onclick={() => (showEdit = !showEdit)}>
 	<!-- Edited (blurred) image shown by default -->
-	<!-- <enhanced:img -->
-	<img
+	<enhanced:img
 		class={`${imgClass} ${showEdit ? 'opacity-100' : 'opacity-0'}`}
 		src={edit}
 		alt="Edited"
@@ -17,8 +16,7 @@
 	/>
 
 	<!-- Original image, hidden until it loads -->
-	<!-- <enhanced:img -->
-	<img
+	<enhanced:img
 		class={`${imgClass} ${showEdit ? 'opacity-0' : 'opacity-100'}`}
 		src={original}
 		alt="Original"

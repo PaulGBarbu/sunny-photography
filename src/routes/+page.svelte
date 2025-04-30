@@ -1,22 +1,13 @@
 <script>
 	import '../app.css';
-	// import Orig_GoldyChurch from '$lib/images/original/goldy-church.webp';
-	// import Edit_GoldyChurch from '$lib/images/edit/goldy-church.webp';
+	import Orig_GoldyChurch from '$lib/images/original/goldy-church.webp?enhanced';
+	import Edit_GoldyChurch from '$lib/images/edit/goldy-church.webp?enhanced';
 
-	// import Orig_CloudySunset from '$lib/images/original/cloudySunset.jpeg';
-	// import Edit_CloudySunset from '$lib/images/edit/cloudySunset.webp';
+	import Orig_CloudySunset from '$lib/images/original/cloudy-sunset.jpeg?enhanced';
+	import Edit_CloudySunset from '$lib/images/edit/cloudy-sunset.webp?enhanced';
 
-	// import Orig_Building1 from '$lib/images/original/building1.jpeg';
-	// import Edit_Building1 from '$lib/images/edit/building1.webp';
-
-	import Orig_GoldyChurch from '$lib/images/original/goldy-church.webp';
-	import Edit_GoldyChurch from '$lib/images/edit/goldy-church.webp';
-
-	import Orig_CloudySunset from '$lib/images/original/cloudySunset.jpeg';
-	import Edit_CloudySunset from '$lib/images/edit/cloudySunset.webp';
-
-	import Orig_Building1 from '$lib/images/original/building1.jpeg';
-	import Edit_Building1 from '$lib/images/edit/building1.webp';
+	import Orig_Building1 from '$lib/images/original/building1.jpeg?enhanced';
+	import Edit_Building1 from '$lib/images/edit/building1.webp?enhanced';
 
 	import Switcher from '$lib/Switcher.svelte';
 	import PhotoInfo from '$lib/PhotoInfo.svelte';
