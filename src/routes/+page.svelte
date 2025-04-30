@@ -14,9 +14,7 @@
 </script>
 
 <div class="relative w-full bg-stone-900">
-	<div
-		class="graph-paperx dots h-[100px] bg-red-500 pt-7 text-center text-3xl font-bold text-white"
-	>
+	<div class="dots h-[100px] pt-7 text-center text-3xl font-bold text-white">
 		Sunnys & Pauli Photography
 	</div>
 	<div class="hatched-rev h-10"></div>
