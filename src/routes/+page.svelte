@@ -11,11 +11,14 @@
 
 	import Switcher from '$lib/Switcher.svelte';
 	import PhotoInfo from '$lib/PhotoInfo.svelte';
+
+	let rowCSS = 'mx-auto justify-center px-4 flex flex-col sm:flex-row md:w-2/3 lg:w-1/2 md:px-0 ';
+	let switcherCSS = 'flex aspect-2/3 justify-end overflow-clip w-full sm:w-1/2 order-1';
 </script>
 
 <div class="relative w-full bg-stone-900">
-	<div class="dots h-[100px] pt-7 text-center text-3xl font-bold text-white">
-		Sunnys & Pauli Photography
+	<div class="dots h-[122px] pt-7 text-center text-3xl font-bold text-white">
+		Sunnys & Pauli <br /> Photography
 	</div>
 	<div class="hatched-rev h-10"></div>
 
@@ -27,19 +30,19 @@
 	<!-- Extra Lines -->
 	<div class="">
 		<div
-			class="brdr-t2b pointer-events-none absolute top-35 bottom-0 z-10 hidden w-1/4 md:block"
+			class="brdr-t2b pointer-events-none absolute top-40 bottom-0 z-10 hidden w-1/6 md:block lg:w-1/4"
 		></div>
 		<div
-			class="brdr-t2b pointer-events-none absolute top-35 bottom-0 z-10 hidden w-1/2 sm:block"
+			class="brdr-t2b pointer-events-none absolute top-40 bottom-0 z-10 hidden w-1/2 sm:block"
 		></div>
 		<div
-			class="brdr-t2b pointer-events-none absolute top-35 bottom-0 z-10 hidden w-3/4 md:block"
+			class="brdr-t2b pointer-events-none absolute top-40 bottom-0 z-10 hidden w-5/6 md:block lg:w-3/4"
 		></div>
 	</div>
 
 	<!-- Row 1 -->
-	<div class="mx-auto justify-center px-4 sm:flex md:w-1/2 md:px-0">
-		<div class="flex aspect-2/3 justify-end overflow-clip sm:w-1/2">
+	<div class={rowCSS}>
+		<div class={switcherCSS}>
 			<Switcher edit={Edit_GoldyChurch} original={Orig_GoldyChurch} />
 		</div>
 		<PhotoInfo
@@ -53,14 +56,14 @@
 	<div class="hatched-rev h-6 w-full"></div>
 
 	<!-- Row 2 -->
-	<div class="mx-auto flex justify-center px-4 md:w-1/2 md:px-0">
+	<div class={rowCSS}>
 		<PhotoInfo
 			photoBy={'Sunny'}
 			editBy={'Pauli'}
 			location={'Germany - Rosenheim'}
 			date={'29.04.2025'}
 		/>
-		<div class="flex aspect-2/3 w-1/2 justify-end overflow-clip">
+		<div class={switcherCSS}>
 			<Switcher edit={Edit_CloudySunset} original={Orig_CloudySunset} />
 		</div>
 	</div>
@@ -69,8 +72,8 @@
 
 	<!-- Row 3 -->
 
-	<div class="mx-auto flex justify-center px-4 md:w-1/2 md:px-0">
-		<div class="flex aspect-2/3 w-1/2 justify-end overflow-clip">
+	<div class={rowCSS}>
+		<div class={switcherCSS}>
 			<!-- <div class="text-white">Here goes an image</div> -->
 			<Switcher edit={Edit_Building1} original={Orig_Building1} />
 		</div>
