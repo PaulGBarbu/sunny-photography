@@ -2,7 +2,7 @@
 	let { photoBy = '', editBy = '', location = '', date = '' } = $props();
 </script>
 
-<div class="relative order-2 h-26 text-white sm:h-auto sm:w-1/2">
+<div class="relative order-2 h-26 text-white sm:order-none sm:h-auto sm:w-1/2">
 	<!-- Info Box -->
 	<div class="absolute bottom-0 h-26 w-full">
 		<!-- Row 1 -->

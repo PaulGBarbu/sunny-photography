@@ -13,7 +13,7 @@
 	import PhotoInfo from '$lib/PhotoInfo.svelte';
 
 	let rowCSS = 'mx-auto justify-center px-4 flex flex-col sm:flex-row md:w-2/3 lg:w-1/2 md:px-0 ';
-	let switcherCSS = 'flex aspect-2/3 justify-end overflow-clip w-full sm:w-1/2 order-1';
+	let switcherCSS = 'flex aspect-2/3 justify-end w-full sm:w-1/2';
 </script>
 
 <div class="relative w-full bg-stone-900">
@@ -28,7 +28,7 @@
 	<div class="hatched absolute top-0 right-0 bottom-0 w-4 md:w-8"></div>
 
 	<!-- Extra Lines -->
-	<div class="">
+	<div>
 		<div
 			class="brdr-t2b pointer-events-none absolute top-40 bottom-0 z-10 hidden w-1/6 md:block lg:w-1/4"
 		></div>
