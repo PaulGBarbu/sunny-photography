@@ -9,6 +9,12 @@
 	import Orig_Building1 from '$lib/images/original/building1.jpeg?enhanced';
 	import Edit_Building1 from '$lib/images/edit/building1.webp?enhanced';
 
+	import Orig_CapitalGreen from '$lib/images/original/capital_green.webp?enhanced';
+	import Edit_CapitalGreen from '$lib/images/edit/capital_green.webp?enhanced';
+
+	import Orig_ConcSlab from '$lib/images/original/concreate_slab.webp?enhanced';
+	import Edit_ConcSlab from '$lib/images/edit/concreate_slab.webp?enhanced';
+
 	import Switcher from '$lib/Switcher.svelte';
 	import PhotoInfo from '$lib/PhotoInfo.svelte';
 
@@ -71,13 +77,32 @@
 	<div class="hatched-rev h-6 w-full"></div>
 
 	<!-- Row 3 -->
-
 	<div class={rowCSS}>
 		<div class={switcherCSS}>
 			<!-- <div class="text-white">Here goes an image</div> -->
 			<Switcher edit={Edit_Building1} original={Orig_Building1} />
 		</div>
 		<PhotoInfo photoBy={'Sunny'} editBy={'Pauli'} />
+	</div>
+
+	<div class="hatched-rev h-6 w-full"></div>
+
+	<!-- Row 4 -->
+	<div class={rowCSS}>
+		<PhotoInfo photoBy={'Sunny'} editBy={'Pauli'} location={'Singapur'} date={''} />
+		<div class={switcherCSS}>
+			<Switcher edit={Edit_CapitalGreen} original={Orig_CapitalGreen} />
+		</div>
+	</div>
+
+	<div class="hatched-rev h-6 w-full"></div>
+
+	<!-- Row 5 -->
+	<div class={rowCSS}>
+		<div class={switcherCSS}>
+			<Switcher edit={Edit_ConcSlab} original={Orig_ConcSlab} />
+		</div>
+		<PhotoInfo photoBy={'Sunny'} editBy={'Pauli'} location={''} date={''} />
 	</div>
 
 	<div class="hatched-rev h-12 w-full"></div>
